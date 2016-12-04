@@ -17,18 +17,10 @@
         android:layout_alignParentStart="true"
         android:id="@+id/textView2"
         android:layout_above="@+id/button"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="56dp"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/button" />
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
 
     <Button
         android:text="@string/przepisz"
@@ -38,54 +30,6 @@
         android:layout_alignTop="@+id/editText"
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/editText" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/radioGr1">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <RadioButton
-                android:text="@string/Herbata"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton5"
-                android:layout_weight="1"
-                android:checked="false" />
-
-            <RadioButton
-                android:text="@string/Kawa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton"
-                android:layout_weight="1" />
-
-            <RadioButton
-                android:text="@string/Ziola"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton4"
-                android:layout_weight="1" />
-
-            <RadioButton
-                android:text="@string/sok"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton3"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-    </RadioGroup>
 
     <Spinner
         android:layout_width="match_parent"
@@ -99,9 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/switch1"
-        android:layout_below="@+id/spinner"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginBottom="92dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -110,7 +54,69 @@
         android:ems="10"
         android:id="@+id/PassText"
         android:layout_alignTop="@+id/switch1"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGr1"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="27dp">
+
+        <RadioButton
+            android:text="@string/Herbata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:text="@string/Kawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/Ziola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/sok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginBottom="48dp"
+        android:layout_alignBottom="@+id/radioGr1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/radioGr1"
+        android:layout_above="@+id/PassText"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp" />
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>

@@ -6,6 +6,16 @@
     <string name="Ziola">Ziółka</string>
     <string name="sok">Sok</string>
     <string name="przepisz">Przepisz</string>
-    
+
+    <string-array name="country_arrays">
+        <item>Polska</item>
+        <item>Ukraina</item>
+        <item>Niemcy</item>
+        <item>Francja</item>
+        <item>Włochy</item>
+        <item>Singapór</item>
+        <item>Nowa Zelandia</item>
+        <item>Portugalia</item>
+    </string-array>
 
 </resources>
