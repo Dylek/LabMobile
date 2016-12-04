@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GUIfun</string>
+    <string name="showPass">Pokaż hasło</string>
+    <string name="Kawa">Kawa</string>
+    <string name="Herbata">Herbata</string>
+    <string name="Ziola">Ziółka</string>
+    <string name="sok">Sok</string>
+    <string name="przepisz">Przepisz</string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+
 </resources>
